@@ -1,0 +1,9 @@
+import os
+
+desktop_path = os.path.join(os.path.expanduser("~"), "Desktop")
+game_icon = os.path.join(desktop_path, "icon_game.png")
+
+if os.path.exists(game_icon):
+    print("✅ File tồn tại:", game_icon)
+else:
+    print("❌ File không tồn tại!")
